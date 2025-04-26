@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pila Zachotin</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/saw-blade1.png" type="image/png">
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <img href="index.html" id="navbar__logo" src="images/logo.png"></img>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links" id="home-page">Domů</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="about.html" class="navbar__links" id="about-page">O firmě</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="services.html" class="navbar__links active" id="services-page">Služby</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="photogallery.html" class="navbar__links" id="photogallery-page">Fotogalerie</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="contact.html" class="navbar__links" id="contact-page">Kontakt</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="tel:777-635-231" class="button" id="contact-page">Tel. +420 777 635 231</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+    <section class="hero2" id="home">
+        <div class="hero2__container">
+            <h1 class="hero2__heading">Služby</h1>
+            <p class="hero2__description">Služby nabízené naší firmou.</p>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <div class="services__container">
+            <h4 class="gallery__subtitle">Pila Zachotín</h4>
+            <h2>Cenový kalkulátor služeb</h2>
+            <p>Vyberte si službu a pár jednoduchými kliknutími se dostanete na odhadovanou cenu služby.</p>
+            <ul id="serviceList">
+                <li data-service="stavebni">Pořez stavebního řeziva</li>
+                <li data-service="truhlarsky">Pořez truhlářského řeziva</li>
+                <li data-service="prazce">Výroba pražců</li>
+                <li data-service="lamely">Výroba podlahových lamel</li>
+                <li data-service="palety">Výroba palet a obalů</li>
+                <li data-service="suseni">Sušení řeziva</li>
+                <li data-service="impregnace">Impregnace řeziva</li>
+            </ul>
+            <div class="service__detail">
+                <div class="service__text">
+                    <h3 id="serviceTitle">Vyberte službu</h3>
+                    <p id="serviceDescription">Klikněte na některou ze služeb pro více informací.</p>
+                </div>
+                <div id="calculator" class="calculator" style="display: none;">
+                    <p><strong>Cena za m³:</strong> <span id="priceM3">0</span> Kč</p>
+                    <label for="woodType">Typ dřeva:</label>
+                    <select id="woodType">
+                        <option value="smrk">Smrk</option>
+                        <option value="borovice">Borovice</option>
+                        <option value="dub">Dub</option>
+                        <option value="buk">Buk</option>
+                        <option value="modrin">Modřín</option>
+                    </select>
+                    <label for="woodGrade">Kvalita dřeva:</label>
+                    <select id="woodGrade">
+                        <option value="A">A (nejvyšší)</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E (nejnižší)</option>
+                    </select>
+                    <label for="volume">Zadejte množství (m³):</label>
+                    <input type="number" id="volume" min="0" step="0.1" placeholder="Např. 2.5">
+                    <p><strong>Odhadovaná cena:</strong> <span id="totalPrice">0</span> Kč</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="footer__slogan">S láskou k dřevu, z Vysočiny</p>
+            <p class="footer__copyright">
+            Copyright &copy; 2025 | 
+            <a href="https://pilazachotin.cz">pilazachotin.cz</a>
+            </p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
