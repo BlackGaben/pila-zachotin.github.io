@@ -1,107 +1,111 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pila Zachotin</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="images/saw-blade1.png" type="image/png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pila Zachotín | Domů</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script defer src="app.js"></script>
 </head>
 <body>
-    <header>
-    <nav class="navbar">
-        <div class="navbar__container">
-            <img href="index.html" id="navbar__logo" src="images/logo.png"></img>
-            <div class="navbar__toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="index.html" class="navbar__links active" id="home-page">Domů</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="about.html" class="navbar__links" id="about-page">O firmě</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="services.html" class="navbar__links" id="services-page">Služby</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="photogallery.html" class="navbar__links" id="photogallery-page">Fotogalerie</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="contact.html" class="navbar__links" id="contact-page">Kontakt</a>
-                </li>
-                <li class="navbar__btn">
-                    <a href="tel:777-635-231" class="button" id="contact-page">Tel. +420 777 635 231</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    </header>
-    <section class="hero">
-        <div class="hero__container">
-            <h1 class="hero__heading">S láskou, k dřevu z Vysočiny</h1>
-            <div class="hero__btns">
-                <a href="services.html#services" class="hero__btn">Co vyrábíme</a>
-                <a href="about.html#export" class="hero__btn">Kam rozvážíme</a>
-                <a href="contact.html#contact" class="hero__btn">Kde se nacházíme</a>
-            </div>
-        </div>
-    </section>
-    <section class="facts__container">
-        <div class="fact">
-            <img src="images/circular-saw.png" alt="kapacita">
-            <div class="fact__text">
-                <div class="fact__highlight">1000m³</div>
-                <div>Měsíční kapacita pořezu</div>
-            </div>
-        </div>
-        <div class="fact">
-            <img src="images/tree.png" alt="kapacita">
-            <div class="fact__text">
-                <div class="fact__highlight">60%</div>
-                <div>Pořez listnatých</div>
-            </div>
-        </div>
-        <div class="fact">
-            <img src="images/pine-tree.png" alt="kapacita">
-            <div class="fact__text">
-                <div class="fact__highlight">40%</div>
-                <div>Pořez jehličnatých</div>
-            </div>
-        </div>
-        <div class="fact">
-            <img src="images/ruler.png" alt="kapacita">
-            <div class="fact__text">
-                <div class="fact__highlight">Tolerance +/- 1mm</div>
-                <div>Přesnost pořezu</div>
-            </div>
-        </div>
-    </section>
-    <section class="video">
-        <h1 class="video__title">Natočili o nás</h1>
-        <div class="video__container">
-            <iframe 
-                src="https://www.youtube.com/watch?v=CIvjf3qfNLM" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowfullscreen>
-            </iframe>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="footer__container">
-            <p class="footer__slogan">S láskou k dřevu, z Vysočiny</p>
-            <p class="footer__copyright">
-            Copyright &copy; 2025 | 
-            <a href="https://pilazachotin.cz">pilazachotin.cz</a>
-            </p>
-        </div>
-        </footer>
-    <script src="app.js"></script>
+  <!-- ─────────────────────────── HEADER ────────────────────────── -->
+  <header class="site-header">
+    <div class="container">
+      <!-- Logo -->
+      <a href="#" id="logo" class="logo">
+        <img src="img/pila-zachotin-logo-header.png" alt="Pila Zachotín">
+      </a>
+
+      <!-- Primary nav -->
+      <nav id="site-nav">
+        <ul>
+          <li><a href="index.html" class="active">Domů</a></li>
+          <li><a href="o-firme.html">O&nbsp;firmě</a></li>
+          <li><a href="sluzby.html">Služby</a></li>
+          <li><a href="fotogalerie.html">Fotogalerie</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+      
+          <!-- mobile-only phone button -->
+          <li class="phone-mobile">
+            <a href="tel:+420777635231" class="btn-phone">+420 777 635 231</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Phone CTA -->
+      <a href="tel:+420777635231" class="cta-phone">+420 777 635 231</a>
+
+      <!-- Mobile hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Rozbalit menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>S&nbsp;láskou&nbsp;k&nbsp;dřevu, z&nbsp;Vysočiny</h1>
+  
+      <div class="hero-buttons">
+        <a href="sluzby.html#vyroba"      class="btn">Co&nbsp;vyrábíme</a>
+        <a href="o-firme.html#export" class="btn">Kam&nbsp;rozvážíme</a>
+        <a href="kontakt.html#contact-map"     class="btn">Kde&nbsp;se&nbsp;nacházíme</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="stat">
+      <img src="img/icon-saw.svg" alt="" class="stat-icon">
+      <div class="stat-text">
+        <span class="stat-top">1000&nbsp;m³</span>
+        <span class="stat-bottom">Měsíční kapacita pořezu</span>
+      </div>
+    </div>
+  
+    <div class="stat">
+      <img src="img/icon-broadleaf.svg" alt="" class="stat-icon">
+      <div class="stat-text">
+        <span class="stat-top">60&nbsp;%</span>
+        <span class="stat-bottom">Pořez listnatých</span>
+      </div>
+    </div>
+  
+    <div class="stat">
+      <img src="img/icon-conifer.svg" alt="" class="stat-icon">
+      <div class="stat-text">
+        <span class="stat-top">40&nbsp;%</span>
+        <span class="stat-bottom">Pořez jehličnatých</span>
+      </div>
+    </div>
+  
+    <div class="stat">
+      <img src="img/icon-ruler.svg" alt="" class="stat-icon">
+      <div class="stat-text">
+        <span class="stat-top">Tolerance&nbsp;±&nbsp;1&nbsp;mm</span>
+        <span class="stat-bottom">Přesnost pořezu</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="video">
+    <h2>Natočili&nbsp;o&nbsp;nás</h2>
+
+    <div class="video-wrapper">
+      <iframe title="Natočili o nás." width="560" height="315" src="https://www.youtube.com/embed/LgWX2sPZQsE/" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="tagline">S&nbsp;láskou&nbsp;k&nbsp;dřevu, z&nbsp;Vysočiny</p>
+  
+      <!-- clickable © line -->
+      <p class="copyright">
+        ©&nbsp;<a href="https://pilazachotin.cz" class="copyright-link">pilazachotin.cz</a>
+      </p>
+    </div>
+  </footer>
 </body>
 </html>

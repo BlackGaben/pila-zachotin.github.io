@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Služby | Pila Zachotín</title>
+
+  <!-- global assets already used by other pages -->
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="app.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+          <!-- Logo -->
+          <a href="#" id="logo" class="logo">
+            <img src="img/pila-zachotin-logo-header.png" alt="Pila Zachotín">
+          </a>
+    
+          <!-- Primary nav -->
+          <nav id="site-nav">
+            <ul>
+              <li><a href="index.html">Domů</a></li>
+              <li><a href="o-firme.html">O&nbsp;firmě</a></li>
+              <li><a href="sluzby.html" class="active">Služby</a></li>
+              <li><a href="fotogalerie.html">Fotogalerie</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+          
+              <!-- mobile-only phone button -->
+              <li class="phone-mobile">
+                <a href="tel:+420777635231" class="btn-phone">+420 777 635 231</a>
+              </li>
+            </ul>
+          </nav>
+    
+          <!-- Phone CTA -->
+          <a href="tel:+420777635231" class="cta-phone">+420 777 635 231</a>
+    
+          <!-- Mobile hamburger -->
+          <button class="hamburger" id="hamburger" aria-label="Rozbalit menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </header>
+
+  <main>
+
+    <!-- ─── HERO (small variant) ─── -->
+    <section class="hero hero--small">
+      <div class="hero-inner hero-inner--left">
+        <h2>Služby</h2>
+        <p class="hero-sub">Spočítejte si cenu našich služeb on-line.</p>
+      </div>
+    </section>
+
+    <!-- ─── CALCULATOR ─── -->
+    <section class="calc">
+      <div class="calc-card">
+        <h3>Kalkulátor ceny služeb</h3>
+
+        <form id="calc-form">
+          <div class="form-row">
+            <label for="volume">Objem řeziva (m³)</label>
+            <input type="number" step="0.01" min="0" id="volume" required>
+          </div>
+
+          <div class="form-row">
+            <label for="service">Služba</label>
+            <select id="service" required>
+              <option value="rezivostaveb">Pořez stavebního řeziva</option>
+              <option value="rezivotruhlar">Pořez truhlářského řeziva</option>
+              <option value="prazce">Výroba pražců</option>
+              <option value="lamely">Výroba podlahových lamel</option>
+              <option value="palety">Výroba palet a obalů</option>
+              <option value="suseni">Sušení řeziva</option>
+              <option value="impregnace">Impregnace řeziva</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="woodType">Druh dřeva</label>
+            <select id="woodType" required>
+              <option value="smrk">Smrk</option>
+              <option value="modrin">Modřín</option>
+              <option value="borovice">Borovice</option>
+              <option value="dub">Dub</option>
+              <option value="buk">Buk</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="grade">Třída kvality</label>
+            <select id="grade" required>
+              <option value="a">A – nejvyšší</option>
+              <option value="b">B</option>
+              <option value="c">C</option>
+              <option value="d">D</option>
+              <option value="e">E</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn-primary">Spočítat cenu</button>
+        </form>
+
+        <div id="result" class="calc-result"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="tagline">S&nbsp;láskou&nbsp;k&nbsp;dřevu, z&nbsp;Vysočiny</p>
+  
+      <!-- clickable © line -->
+      <p class="copyright">
+        ©&nbsp;<a href="https://pilazachotin.cz" class="copyright-link">pilazachotin.cz</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
